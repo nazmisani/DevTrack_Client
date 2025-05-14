@@ -3,12 +3,12 @@
 <div align="center">
 
 ```
- ██████╗ ███████╗██╗   ██╗████████╗██████╗  █████╗  ██████╗██╗  ██╗
- ██╔══██╗██╔════╝██║   ██║╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝
- ██║  ██║█████╗  ██║   ██║   ██║   ██████╔╝███████║██║     █████╔╝
- ██║  ██║██╔══╝  ╚██╗ ██╔╝   ██║   ██╔══██╗██╔══██║██║     ██╔═██╗
- ██████╔╝███████╗ ╚████╔╝    ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗
- ╚═════╝ ╚══════╝  ╚═══╝     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+██████╗ ███████╗██╗   ██╗████████╗██████╗  █████╗  ██████╗██╗  ██╗
+██╔══██╗██╔════╝██║   ██║╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝
+██║  ██║█████╗  ██║   ██║   ██║   ██████╔╝███████║██║     █████╔╝
+██║  ██║██╔══╝  ╚██╗ ██╔╝   ██║   ██╔══██╗██╔══██║██║     ██╔═██╗
+██████╔╝███████╗ ╚████╔╝    ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗
+╚═════╝ ╚══════╝  ╚═══╝     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
 ```
 
 ### _Your development journey, beautifully tracked_
@@ -19,11 +19,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <br/>
-
-<p align="center">
-  <a href="#-key-features">Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-</p>
 
 </div>
 
@@ -73,7 +68,6 @@
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 
 </div>
