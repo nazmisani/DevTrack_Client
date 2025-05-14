@@ -5,16 +5,16 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"/>
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
 </p>
 
 ---
 
 ## 🚀 Overview
 
-**DevTrack Client** is the React-based frontend for the [DevTrack](https://github.com/yourusername/DevTrack_Server) full-stack application.  
+**DevTrack Client** is the Next.js-based frontend for the [DevTrack](https://github.com/yourusername/DevTrack_Server) full-stack application.  
 It helps developers track skills, manage projects, and generate a beautiful public portfolio.
 
 ---
@@ -27,14 +27,17 @@ It helps developers track skills, manage projects, and generate a beautiful publ
 - 📂 Project Management with tags, links & tech stack
 - 🌍 Public Portfolio Page at `/public/<username>`
 - 📱 Mobile Friendly
+- ⚡ Server-Side Rendering for optimal performance
+- 🔄 API Routes for backend communication
 
 ---
 
 ## 🛠 Tech Stack
 
-- ⚛️ React (with Vite)
+- ⚛️ Next.js
+- 🔤 TypeScript
 - 🎨 Tailwind CSS
 - 🔗 Axios
-- 🌐 React Router DOM
+- 🌐 Next Router
 
 ---
