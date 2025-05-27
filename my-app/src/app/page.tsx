@@ -29,8 +29,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
-        <div className="w-full max-w-4xl backdrop-blur-lg bg-black bg-opacity-40 rounded-3xl border border-gray-800 shadow-2xl p-8 md:p-12">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-16 md:py-24">
+        <div className="w-full max-w-4xl backdrop-blur-lg bg-black bg-opacity-40 rounded-3xl border border-gray-800 shadow-2xl p-8 md:p-12 my-8 md:my-12">
           <div className="mb-12 relative">
             <div className="absolute -top-20 -left-20 w-40 h-40 border-t-2 border-l-2 border-cyan-500 opacity-50"></div>
             <div className="absolute -bottom-20 -right-20 w-40 h-40 border-b-2 border-r-2 border-purple-500 opacity-50"></div>
@@ -231,12 +231,7 @@ export default function Home() {
                 employers.
               </p>
             </div>
-            <div className="mt-16 text-center col-span-1 md:col-span-3">
-              <div className="inline-flex items-center px-4 py-2 bg-gray-800 rounded-full text-sm text-gray-400">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-                Trusted by 10,000+ developers worldwide
-              </div>
-
+            <div className="mt-20 text-center col-span-1 md:col-span-3">
               <div className="mt-12 pt-8 border-t border-gray-800">
                 <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
                   {[
@@ -256,7 +251,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <p className="mt-8 text-gray-600 text-sm">
+                <p className="mt-10 mb-4 text-gray-600 text-sm">
                   &copy; {new Date().getFullYear()} DevTrack • Designed for
                   developers
                 </p>
