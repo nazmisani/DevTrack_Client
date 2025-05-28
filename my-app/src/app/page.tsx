@@ -30,30 +30,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Navigation */}
-      <header className="relative z-20 w-full">
-        <nav className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
-          <div className="flex items-center">
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-              &lt;DevTrack/&gt;
-            </span>
-          </div>
-          <div className="flex gap-4">
-            <Link 
-              href="/login"
-              className="text-gray-300 hover:text-white transition-colors duration-300"
-            >
-              Login
-            </Link>
-            <Link
-              href="/register"
-              className="px-4 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
-            >
-              Sign Up
-            </Link>
-          </div>
-        </nav>
-      </header>
+      {/* Navigation has been removed */}
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] px-4 py-12 md:py-16">
         <div className="w-full max-w-6xl mx-auto">
