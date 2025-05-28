@@ -276,28 +276,6 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Testimonial Section */}
-          <div className="mt-20 py-16 backdrop-blur-sm bg-black bg-opacity-30 rounded-3xl border border-gray-800 overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500"></div>
-            <div className="max-w-4xl mx-auto text-center px-4">
-              <h2 className="text-3xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-                Built for Developers, By Developers
-              </h2>
-              <p className="text-xl text-gray-300 mb-8">
-                "DevTrack has completely transformed how I showcase my skills and projects to employers. The interactive visualizations make my portfolio stand out."
-              </p>
-              <div className="flex items-center justify-center space-x-2">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold">
-                  JS
-                </div>
-                <div className="text-left">
-                  <p className="font-medium text-white">Jane Smith</p>
-                  <p className="text-sm text-gray-400">Senior Frontend Developer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
           {/* Footer */}
           <footer className="mt-20 pt-12 border-t border-gray-800 text-center">
             <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
