@@ -14,24 +14,100 @@ export default function Dashboard() {
       <div className="absolute w-full h-full overflow-hidden z-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-purple-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-cyan-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>        {/* Code-like background decoration */}
+        <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-cyan-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>{" "}
+        {/* Code-like background decoration */}
         <div className="absolute inset-0 opacity-10">
           {/* Using predefined positions instead of Math.random() to avoid hydration mismatch */}
-          <div className="absolute text-xs md:text-sm" style={{ left: "10%", top: "15%", transform: "rotate(45deg)" }}>{"{</>"}</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "25%", top: "30%", transform: "rotate(90deg)" }}>const()</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "40%", top: "60%", transform: "rotate(135deg)" }}>import</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "65%", top: "25%", transform: "rotate(180deg)" }}>export</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "80%", top: "70%", transform: "rotate(225deg)" }}>function()</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "15%", top: "85%", transform: "rotate(270deg)" }}>{'=>'}</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "35%", top: "10%", transform: "rotate(30deg)" }}>{"{</>"}</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "55%", top: "45%", transform: "rotate(60deg)" }}>const()</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "75%", top: "55%", transform: "rotate(120deg)" }}>import</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "20%", top: "50%", transform: "rotate(150deg)" }}>export</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "60%", top: "85%", transform: "rotate(210deg)" }}>function()</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "90%", top: "40%", transform: "rotate(315deg)" }}>{'=>'}</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "5%", top: "65%", transform: "rotate(20deg)" }}>{"{</>"}</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "45%", top: "20%", transform: "rotate(80deg)" }}>const()</div>
-          <div className="absolute text-xs md:text-sm" style={{ left: "85%", top: "8%", transform: "rotate(100deg)" }}>import</div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "10%", top: "15%", transform: "rotate(45deg)" }}
+          >
+            {"{</>"}
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "25%", top: "30%", transform: "rotate(90deg)" }}
+          >
+            const()
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "40%", top: "60%", transform: "rotate(135deg)" }}
+          >
+            import
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "65%", top: "25%", transform: "rotate(180deg)" }}
+          >
+            export
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "80%", top: "70%", transform: "rotate(225deg)" }}
+          >
+            function()
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "15%", top: "85%", transform: "rotate(270deg)" }}
+          >
+            {"=>"}
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "35%", top: "10%", transform: "rotate(30deg)" }}
+          >
+            {"{</>"}
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "55%", top: "45%", transform: "rotate(60deg)" }}
+          >
+            const()
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "75%", top: "55%", transform: "rotate(120deg)" }}
+          >
+            import
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "20%", top: "50%", transform: "rotate(150deg)" }}
+          >
+            export
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "60%", top: "85%", transform: "rotate(210deg)" }}
+          >
+            function()
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "90%", top: "40%", transform: "rotate(315deg)" }}
+          >
+            {"=>"}
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "5%", top: "65%", transform: "rotate(20deg)" }}
+          >
+            {"{</>"}
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "45%", top: "20%", transform: "rotate(80deg)" }}
+          >
+            const()
+          </div>
+          <div
+            className="absolute text-xs md:text-sm"
+            style={{ left: "85%", top: "8%", transform: "rotate(100deg)" }}
+          >
+            import
+          </div>
         </div>
       </div>
 
@@ -284,7 +360,7 @@ export default function Dashboard() {
                   </svg>
                   <span className="absolute top-0 right-0 w-2 h-2 bg-cyan-400 rounded-full"></span>
                 </button>
-                
+
                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white text-sm font-bold">
                   JD
                 </div>
@@ -298,7 +374,9 @@ export default function Dashboard() {
             <nav className="text-sm mb-6">
               <ol className="list-none p-0 flex text-gray-500">
                 <li className="flex items-center">
-                  <a href="#" className="text-cyan-400 hover:text-cyan-300">Dashboard</a>
+                  <a href="#" className="text-cyan-400 hover:text-cyan-300">
+                    Dashboard
+                  </a>
                 </li>
                 <li className="flex items-center mx-2">/</li>
                 <li className="capitalize">{activeTab}</li>
@@ -308,18 +386,24 @@ export default function Dashboard() {
             {/* Dashboard content - changes based on activeTab */}
             {activeTab === "overview" && (
               <div className="space-y-6">
-                <h1 className="text-2xl font-bold text-white">Welcome back, John!</h1>
+                <h1 className="text-2xl font-bold text-white">
+                  Welcome back, John!
+                </h1>
 
                 {/* Stats Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {/* Skills Card */}
                   <div className="relative p-6 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800 overflow-hidden group hover:border-cyan-800 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-900/20">
                     <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-600 rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
-                    <h3 className="text-lg font-medium text-gray-200 mb-2">Skills</h3>
+                    <h3 className="text-lg font-medium text-gray-200 mb-2">
+                      Skills
+                    </h3>
                     <div className="flex items-end justify-between">
                       <div>
                         <p className="text-3xl font-bold text-white">24</p>
-                        <p className="text-sm text-cyan-400">4 new this month</p>
+                        <p className="text-sm text-cyan-400">
+                          4 new this month
+                        </p>
                       </div>
                       <div className="w-12 h-12 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-lg flex items-center justify-center">
                         <svg
@@ -343,7 +427,9 @@ export default function Dashboard() {
                   {/* Projects Card */}
                   <div className="relative p-6 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800 overflow-hidden group hover:border-purple-800 transition-all duration-300 hover:shadow-lg hover:shadow-purple-900/20">
                     <div className="absolute top-0 right-0 w-24 h-24 bg-purple-600 rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
-                    <h3 className="text-lg font-medium text-gray-200 mb-2">Projects</h3>
+                    <h3 className="text-lg font-medium text-gray-200 mb-2">
+                      Projects
+                    </h3>
                     <div className="flex items-end justify-between">
                       <div>
                         <p className="text-3xl font-bold text-white">12</p>
@@ -371,7 +457,9 @@ export default function Dashboard() {
                   {/* Portfolio Views Card */}
                   <div className="relative p-6 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800 overflow-hidden group hover:border-pink-800 transition-all duration-300 hover:shadow-lg hover:shadow-pink-900/20">
                     <div className="absolute top-0 right-0 w-24 h-24 bg-pink-600 rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
-                    <h3 className="text-lg font-medium text-gray-200 mb-2">Portfolio Views</h3>
+                    <h3 className="text-lg font-medium text-gray-200 mb-2">
+                      Portfolio Views
+                    </h3>
                     <div className="flex items-end justify-between">
                       <div>
                         <p className="text-3xl font-bold text-white">1.4k</p>
@@ -406,14 +494,22 @@ export default function Dashboard() {
                 {/* Activity Chart Card */}
                 <div className="p-6 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800">
                   <div className="flex flex-wrap items-center justify-between mb-4">
-                    <h3 className="text-lg font-medium text-gray-200">Skill Progression</h3>
+                    <h3 className="text-lg font-medium text-gray-200">
+                      Skill Progression
+                    </h3>
                     <div className="flex space-x-2">
-                      <button className="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 transition-colors">Week</button>
-                      <button className="px-3 py-1 text-xs rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white">Month</button>
-                      <button className="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 transition-colors">Year</button>
+                      <button className="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 transition-colors">
+                        Week
+                      </button>
+                      <button className="px-3 py-1 text-xs rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
+                        Month
+                      </button>
+                      <button className="px-3 py-1 text-xs rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 transition-colors">
+                        Year
+                      </button>
                     </div>
                   </div>
-                  
+
                   {/* Chart placeholder */}
                   <div className="aspect-[16/7] w-full bg-gray-800/40 rounded-lg flex items-center justify-center">
                     {/* This would be replaced with an actual chart component */}
@@ -429,7 +525,9 @@ export default function Dashboard() {
                         <div className="absolute bottom-0 left-[70%] w-4 h-[80%] bg-cyan-500 rounded-t-sm"></div>
                         <div className="absolute bottom-0 left-[80%] w-4 h-[65%] bg-cyan-500 rounded-t-sm"></div>
                       </div>
-                      <p className="mt-2 text-sm text-gray-400">Chart visualization would go here</p>
+                      <p className="mt-2 text-sm text-gray-400">
+                        Chart visualization would go here
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -437,9 +535,11 @@ export default function Dashboard() {
                 {/* Recent Projects */}
                 <div className="p-6 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800">
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-lg font-medium text-gray-200">Recent Projects</h3>
+                    <h3 className="text-lg font-medium text-gray-200">
+                      Recent Projects
+                    </h3>
                     <button className="text-xs flex items-center text-cyan-400 hover:text-cyan-300 transition-colors">
-                      View all 
+                      View all
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4 ml-1"
@@ -456,7 +556,7 @@ export default function Dashboard() {
                       </svg>
                     </button>
                   </div>
-                  
+
                   <div className="space-y-4">
                     {/* Project Item */}
                     <div className="p-4 rounded-lg bg-gray-800/30 border border-gray-700 hover:border-gray-600 transition-colors group">
@@ -479,8 +579,12 @@ export default function Dashboard() {
                             </svg>
                           </div>
                           <div>
-                            <h4 className="text-sm font-medium text-white">DevTrack</h4>
-                            <p className="text-xs text-gray-400">Full Stack Development</p>
+                            <h4 className="text-sm font-medium text-white">
+                              DevTrack
+                            </h4>
+                            <p className="text-xs text-gray-400">
+                              Full Stack Development
+                            </p>
                           </div>
                         </div>
                         <span className="px-2 py-1 text-xs rounded-full bg-green-900/20 text-green-400 border border-green-900/30">
@@ -495,7 +599,9 @@ export default function Dashboard() {
                             +3
                           </div>
                         </div>
-                        <div className="text-xs text-gray-400">Updated 2 days ago</div>
+                        <div className="text-xs text-gray-400">
+                          Updated 2 days ago
+                        </div>
                       </div>
                     </div>
 
@@ -520,8 +626,12 @@ export default function Dashboard() {
                             </svg>
                           </div>
                           <div>
-                            <h4 className="text-sm font-medium text-white">AI Chat Platform</h4>
-                            <p className="text-xs text-gray-400">Machine Learning</p>
+                            <h4 className="text-sm font-medium text-white">
+                              AI Chat Platform
+                            </h4>
+                            <p className="text-xs text-gray-400">
+                              Machine Learning
+                            </p>
                           </div>
                         </div>
                         <span className="px-2 py-1 text-xs rounded-full bg-orange-900/20 text-orange-400 border border-orange-900/30">
@@ -533,7 +643,9 @@ export default function Dashboard() {
                           <div className="w-6 h-6 rounded-full bg-gray-700 border-2 border-gray-800"></div>
                           <div className="w-6 h-6 rounded-full bg-gray-700 border-2 border-gray-800"></div>
                         </div>
-                        <div className="text-xs text-gray-400">Updated today</div>
+                        <div className="text-xs text-gray-400">
+                          Updated today
+                        </div>
                       </div>
                     </div>
 
@@ -558,8 +670,12 @@ export default function Dashboard() {
                             </svg>
                           </div>
                           <div>
-                            <h4 className="text-sm font-medium text-white">E-commerce App</h4>
-                            <p className="text-xs text-gray-400">React Native</p>
+                            <h4 className="text-sm font-medium text-white">
+                              E-commerce App
+                            </h4>
+                            <p className="text-xs text-gray-400">
+                              React Native
+                            </p>
                           </div>
                         </div>
                         <span className="px-2 py-1 text-xs rounded-full bg-gray-900/40 text-gray-400 border border-gray-700">
@@ -575,68 +691,92 @@ export default function Dashboard() {
                             +2
                           </div>
                         </div>
-                        <div className="text-xs text-gray-400">Updated 1 week ago</div>
+                        <div className="text-xs text-gray-400">
+                          Updated 1 week ago
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Two columns layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {/* Top Skills Card */}
                   <div className="p-6 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800">
-                    <h3 className="text-lg font-medium text-gray-200 mb-6">Top Skills</h3>
-                    
+                    <h3 className="text-lg font-medium text-gray-200 mb-6">
+                      Top Skills
+                    </h3>
+
                     <div className="space-y-5">
                       {/* Skill Item */}
                       <div>
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm font-medium text-gray-300">React</span>
-                          <span className="text-xs text-cyan-400">Advanced</span>
+                          <span className="text-sm font-medium text-gray-300">
+                            React
+                          </span>
+                          <span className="text-xs text-cyan-400">
+                            Advanced
+                          </span>
                         </div>
                         <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                           <div className="h-full bg-gradient-to-r from-cyan-500 to-blue-600 w-[92%]"></div>
                         </div>
                       </div>
-                      
+
                       {/* Skill Item */}
                       <div>
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm font-medium text-gray-300">TypeScript</span>
-                          <span className="text-xs text-cyan-400">Intermediate</span>
+                          <span className="text-sm font-medium text-gray-300">
+                            TypeScript
+                          </span>
+                          <span className="text-xs text-cyan-400">
+                            Intermediate
+                          </span>
                         </div>
                         <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                           <div className="h-full bg-gradient-to-r from-cyan-500 to-blue-600 w-[75%]"></div>
                         </div>
                       </div>
-                      
+
                       {/* Skill Item */}
                       <div>
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm font-medium text-gray-300">Node.js</span>
-                          <span className="text-xs text-cyan-400">Advanced</span>
+                          <span className="text-sm font-medium text-gray-300">
+                            Node.js
+                          </span>
+                          <span className="text-xs text-cyan-400">
+                            Advanced
+                          </span>
                         </div>
                         <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                           <div className="h-full bg-gradient-to-r from-cyan-500 to-blue-600 w-[88%]"></div>
                         </div>
                       </div>
-                      
+
                       {/* Skill Item */}
                       <div>
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm font-medium text-gray-300">TailwindCSS</span>
-                          <span className="text-xs text-cyan-400">Advanced</span>
+                          <span className="text-sm font-medium text-gray-300">
+                            TailwindCSS
+                          </span>
+                          <span className="text-xs text-cyan-400">
+                            Advanced
+                          </span>
                         </div>
                         <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                           <div className="h-full bg-gradient-to-r from-cyan-500 to-blue-600 w-[90%]"></div>
                         </div>
                       </div>
-                      
+
                       {/* Skill Item */}
                       <div>
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm font-medium text-gray-300">MongoDB</span>
-                          <span className="text-xs text-cyan-400">Intermediate</span>
+                          <span className="text-sm font-medium text-gray-300">
+                            MongoDB
+                          </span>
+                          <span className="text-xs text-cyan-400">
+                            Intermediate
+                          </span>
                         </div>
                         <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                           <div className="h-full bg-gradient-to-r from-cyan-500 to-blue-600 w-[68%]"></div>
@@ -647,42 +787,72 @@ export default function Dashboard() {
 
                   {/* Activity Feed Card */}
                   <div className="p-6 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800">
-                    <h3 className="text-lg font-medium text-gray-200 mb-6">Activity Feed</h3>
-                    
+                    <h3 className="text-lg font-medium text-gray-200 mb-6">
+                      Activity Feed
+                    </h3>
+
                     <div className="relative pl-6 pb-1 before:content-[''] before:absolute before:top-0 before:left-2 before:h-full before:w-0.5 before:bg-gray-800 space-y-6">
                       {/* Activity Item */}
                       <div className="relative before:content-[''] before:absolute before:left-[-1.5rem] before:top-1 before:w-3 before:h-3 before:border-2 before:border-cyan-500 before:bg-gray-900 before:rounded-full">
                         <div className="flex flex-col">
-                          <span className="text-sm font-medium text-white">Updated React skill rating</span>
-                          <span className="text-xs text-gray-400 mt-1">Today, 11:42 AM</span>
-                          <p className="text-xs text-gray-500 mt-2">You updated your React skill from Intermediate to Advanced level.</p>
+                          <span className="text-sm font-medium text-white">
+                            Updated React skill rating
+                          </span>
+                          <span className="text-xs text-gray-400 mt-1">
+                            Today, 11:42 AM
+                          </span>
+                          <p className="text-xs text-gray-500 mt-2">
+                            You updated your React skill from Intermediate to
+                            Advanced level.
+                          </p>
                         </div>
                       </div>
-                      
+
                       {/* Activity Item */}
                       <div className="relative before:content-[''] before:absolute before:left-[-1.5rem] before:top-1 before:w-3 before:h-3 before:border-2 before:border-purple-500 before:bg-gray-900 before:rounded-full">
                         <div className="flex flex-col">
-                          <span className="text-sm font-medium text-white">Created new project</span>
-                          <span className="text-xs text-gray-400 mt-1">Yesterday, 3:24 PM</span>
-                          <p className="text-xs text-gray-500 mt-2">You started a new project "AI Chat Platform" with 2 collaborators.</p>
+                          <span className="text-sm font-medium text-white">
+                            Created new project
+                          </span>
+                          <span className="text-xs text-gray-400 mt-1">
+                            Yesterday, 3:24 PM
+                          </span>
+                          <p className="text-xs text-gray-500 mt-2">
+                            You started a new project "AI Chat Platform" with 2
+                            collaborators.
+                          </p>
                         </div>
                       </div>
-                      
+
                       {/* Activity Item */}
                       <div className="relative before:content-[''] before:absolute before:left-[-1.5rem] before:top-1 before:w-3 before:h-3 before:border-2 before:border-pink-500 before:bg-gray-900 before:rounded-full">
                         <div className="flex flex-col">
-                          <span className="text-sm font-medium text-white">Updated portfolio</span>
-                          <span className="text-xs text-gray-400 mt-1">3 days ago</span>
-                          <p className="text-xs text-gray-500 mt-2">You updated your public portfolio profile and added 2 new projects.</p>
+                          <span className="text-sm font-medium text-white">
+                            Updated portfolio
+                          </span>
+                          <span className="text-xs text-gray-400 mt-1">
+                            3 days ago
+                          </span>
+                          <p className="text-xs text-gray-500 mt-2">
+                            You updated your public portfolio profile and added
+                            2 new projects.
+                          </p>
                         </div>
                       </div>
-                      
+
                       {/* Activity Item */}
                       <div className="relative before:content-[''] before:absolute before:left-[-1.5rem] before:top-1 before:w-3 before:h-3 before:border-2 before:border-blue-500 before:bg-gray-900 before:rounded-full">
                         <div className="flex flex-col">
-                          <span className="text-sm font-medium text-white">Added new skill</span>
-                          <span className="text-xs text-gray-400 mt-1">1 week ago</span>
-                          <p className="text-xs text-gray-500 mt-2">You added "GraphQL" to your skills with beginner level.</p>
+                          <span className="text-sm font-medium text-white">
+                            Added new skill
+                          </span>
+                          <span className="text-xs text-gray-400 mt-1">
+                            1 week ago
+                          </span>
+                          <p className="text-xs text-gray-500 mt-2">
+                            You added "GraphQL" to your skills with beginner
+                            level.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -694,10 +864,12 @@ export default function Dashboard() {
             {/* Placeholder content for other tabs */}
             {activeTab !== "overview" && (
               <div className="p-10 backdrop-blur-lg bg-gray-900 bg-opacity-40 rounded-xl border border-gray-800 text-center">
-                <h2 className="text-xl font-bold mb-2 capitalize">{activeTab} Panel</h2>
+                <h2 className="text-xl font-bold mb-2 capitalize">
+                  {activeTab} Panel
+                </h2>
                 <p className="text-gray-400">
-                  This is a placeholder for the {activeTab} section.
-                  The layout would include specific content for this section.
+                  This is a placeholder for the {activeTab} section. The layout
+                  would include specific content for this section.
                 </p>
               </div>
             )}
