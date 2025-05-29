@@ -43,20 +43,21 @@ export default function Login() {
         <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-cyan-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
 
         {/* Code-like background decoration */}
-        <div className="absolute inset-0 opacity-10">
-          {[...Array(15)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute text-xs md:text-sm"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                transform: `rotate(${Math.random() * 360}deg)`,
-              }}
-            >
-              {"{</>}"}
-            </div>
-          ))}
+        <div className="absolute inset-0 opacity-10">          <div className="absolute text-xs md:text-sm" style={{ left: "10%", top: "15%", transform: "rotate(45deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "25%", top: "30%", transform: "rotate(90deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "40%", top: "60%", transform: "rotate(135deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "65%", top: "25%", transform: "rotate(180deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "80%", top: "70%", transform: "rotate(225deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "15%", top: "85%", transform: "rotate(270deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "35%", top: "10%", transform: "rotate(30deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "55%", top: "45%", transform: "rotate(60deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "75%", top: "55%", transform: "rotate(120deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "20%", top: "50%", transform: "rotate(150deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "60%", top: "85%", transform: "rotate(210deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "90%", top: "40%", transform: "rotate(315deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "5%", top: "65%", transform: "rotate(20deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "45%", top: "20%", transform: "rotate(80deg)" }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "85%", top: "8%", transform: "rotate(100deg)" }}>{"{</>"}</div>
         </div>
       </div>{" "}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-16">

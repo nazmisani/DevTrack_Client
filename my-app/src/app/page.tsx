@@ -13,20 +13,37 @@ export default function Home() {
 
         {/* Code-like background decoration - enhanced with more elements */}
         <div className="absolute inset-0 opacity-10">
-          {[...Array(30)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute text-xs md:text-sm"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                transform: `rotate(${Math.random() * 360}deg)`,
-                opacity: Math.random() * 0.5 + 0.5,
-              }}
-            >
-              {["{</>}", "const()", "import", "export", "function()", "=>"][i % 6]}
-            </div>
-          ))}
+          {/* Fixed positions for code-like elements to avoid hydration errors */}
+          <div className="absolute text-xs md:text-sm" style={{ left: "10%", top: "15%", transform: "rotate(45deg)", opacity: 0.8 }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "25%", top: "30%", transform: "rotate(90deg)", opacity: 0.7 }}>const()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "40%", top: "60%", transform: "rotate(135deg)", opacity: 0.9 }}>import</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "65%", top: "25%", transform: "rotate(180deg)", opacity: 0.7 }}>export</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "80%", top: "70%", transform: "rotate(225deg)", opacity: 0.8 }}>function()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "15%", top: "85%", transform: "rotate(270deg)", opacity: 0.9 }}>{'=>'}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "35%", top: "10%", transform: "rotate(30deg)", opacity: 0.7 }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "55%", top: "45%", transform: "rotate(60deg)", opacity: 0.8 }}>const()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "75%", top: "55%", transform: "rotate(120deg)", opacity: 0.7 }}>import</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "20%", top: "50%", transform: "rotate(150deg)", opacity: 0.9 }}>export</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "60%", top: "85%", transform: "rotate(210deg)", opacity: 0.8 }}>function()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "90%", top: "40%", transform: "rotate(315deg)", opacity: 0.7 }}>{'=>'}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "5%", top: "65%", transform: "rotate(20deg)", opacity: 0.8 }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "45%", top: "20%", transform: "rotate(80deg)", opacity: 0.9 }}>const()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "85%", top: "8%", transform: "rotate(100deg)", opacity: 0.7 }}>import</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "33%", top: "73%", transform: "rotate(220deg)", opacity: 0.8 }}>export</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "70%", top: "12%", transform: "rotate(170deg)", opacity: 0.7 }}>function()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "12%", top: "35%", transform: "rotate(290deg)", opacity: 0.9 }}>{'=>'}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "93%", top: "83%", transform: "rotate(45deg)", opacity: 0.8 }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "28%", top: "88%", transform: "rotate(125deg)", opacity: 0.7 }}>const()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "48%", top: "5%", transform: "rotate(190deg)", opacity: 0.9 }}>import</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "88%", top: "25%", transform: "rotate(240deg)", opacity: 0.8 }}>export</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "7%", top: "95%", transform: "rotate(10deg)", opacity: 0.7 }}>function()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "65%", top: "38%", transform: "rotate(300deg)", opacity: 0.9 }}>{'=>'}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "18%", top: "22%", transform: "rotate(70deg)", opacity: 0.8 }}>{"{</>"}</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "50%", top: "75%", transform: "rotate(150deg)", opacity: 0.7 }}>const()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "78%", top: "93%", transform: "rotate(230deg)", opacity: 0.9 }}>import</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "3%", top: "48%", transform: "rotate(130deg)", opacity: 0.8 }}>export</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "42%", top: "33%", transform: "rotate(320deg)", opacity: 0.7 }}>function()</div>
+          <div className="absolute text-xs md:text-sm" style={{ left: "95%", top: "68%", transform: "rotate(60deg)", opacity: 0.9 }}>{'=>'}</div>
         </div>
       </div>
 
