@@ -75,7 +75,6 @@ export default function Register() {
 
   return (
     <main className=" min-h-screen relative overflow-hidden bg-black text-white">
-      {/* Animated background elements - similar to login page for consistency */}
       <div className="absolute w-full h-full overflow-hidden z-0">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
         <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-purple-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
