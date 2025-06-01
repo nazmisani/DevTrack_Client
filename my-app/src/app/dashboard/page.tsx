@@ -10,107 +10,15 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Background effects */}
+      {/* Background effects */}{" "}
       <div className="absolute w-full h-full overflow-hidden z-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-purple-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-cyan-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>{" "}
-        {/* Code-like background decoration */}
-        <div className="absolute inset-0 opacity-10">
-          {/* Using predefined positions instead of Math.random() to avoid hydration mismatch */}
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "10%", top: "15%", transform: "rotate(45deg)" }}
-          >
-            {"{</>"}
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "25%", top: "30%", transform: "rotate(90deg)" }}
-          >
-            const()
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "40%", top: "60%", transform: "rotate(135deg)" }}
-          >
-            import
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "65%", top: "25%", transform: "rotate(180deg)" }}
-          >
-            export
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "80%", top: "70%", transform: "rotate(225deg)" }}
-          >
-            function()
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "15%", top: "85%", transform: "rotate(270deg)" }}
-          >
-            {"=>"}
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "35%", top: "10%", transform: "rotate(30deg)" }}
-          >
-            {"{</>"}
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "55%", top: "45%", transform: "rotate(60deg)" }}
-          >
-            const()
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "75%", top: "55%", transform: "rotate(120deg)" }}
-          >
-            import
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "20%", top: "50%", transform: "rotate(150deg)" }}
-          >
-            export
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "60%", top: "85%", transform: "rotate(210deg)" }}
-          >
-            function()
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "90%", top: "40%", transform: "rotate(315deg)" }}
-          >
-            {"=>"}
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "5%", top: "65%", transform: "rotate(20deg)" }}
-          >
-            {"{</>"}
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "45%", top: "20%", transform: "rotate(80deg)" }}
-          >
-            const()
-          </div>
-          <div
-            className="absolute text-xs md:text-sm"
-            style={{ left: "85%", top: "8%", transform: "rotate(100deg)" }}
-          >
-            import
-          </div>
-        </div>
+        <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-cyan-700 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
+        {/* Additional blobs for visual effect */}
+        <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-pink-700 rounded-full mix-blend-multiply filter blur-3xl opacity-8 animate-blob animation-delay-3000"></div>
+        <div className="absolute top-2/3 right-1/6 w-72 h-72 bg-indigo-700 rounded-full mix-blend-multiply filter blur-3xl opacity-8 animate-blob animation-delay-5000"></div>
       </div>
-
       {/* Main layout structure */}
       <div className="relative z-10 flex">
         {/* Sidebar */}
