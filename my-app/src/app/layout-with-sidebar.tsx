@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export default function LayoutWithSidebar({
   children,
@@ -9,6 +10,16 @@ export default function LayoutWithSidebar({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  // Close sidebar when route changes on mobile
+  useEffect(() => {
+    setSidebarOpen(false);
+  }, [pathname]);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -25,7 +36,11 @@ export default function LayoutWithSidebar({
       {/* Main layout structure */}
       <div className="relative z-10 flex">
         {/* Sidebar */}
-        <aside className="fixed inset-y-0 left-0 w-64 bg-gray-900 bg-opacity-60 backdrop-blur-lg border-r border-gray-800 hidden md:block">
+        <aside
+          className={`fixed inset-y-0 left-0 w-64 bg-gray-900 bg-opacity-60 backdrop-blur-lg border-r border-gray-800 transform sidebar-transition z-50 ${
+            sidebarOpen ? "translate-x-0" : "-translate-x-full"
+          } md:translate-x-0 md:block`}
+        >
           <div className="p-6 border-b border-gray-800">
             <div className="flex items-center">
               <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
@@ -183,7 +198,12 @@ export default function LayoutWithSidebar({
 
         {/* Mobile menu button - visible only on mobile */}
         <div className="md:hidden fixed bottom-6 right-6 z-50">
-          <button className="p-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full shadow-lg shadow-cyan-500/20 text-white">
+          <button
+            id="sidebar-toggle"
+            onClick={toggleSidebar}
+            className="p-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full shadow-lg shadow-cyan-500/20 text-white sidebar-toggle-button"
+            aria-label="Toggle sidebar"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -191,15 +211,33 @@ export default function LayoutWithSidebar({
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
+              {sidebarOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              )}
             </svg>
           </button>
         </div>
+
+        {/* Overlay for mobile when sidebar is open */}
+        {sidebarOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden overlay-fade-in"
+            onClick={toggleSidebar}
+            aria-hidden="true"
+          ></div>
+        )}
 
         {/* Main Content */}
         <main className="flex-1 md:ml-64">
@@ -208,7 +246,11 @@ export default function LayoutWithSidebar({
             <div className="flex items-center justify-between px-6 py-4">
               {/* Mobile logo and menu button */}
               <div className="flex items-center md:hidden">
-                <button className="mr-3">
+                <button
+                  className="mr-3"
+                  onClick={toggleSidebar}
+                  aria-label="Toggle sidebar"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 text-gray-300"
@@ -216,12 +258,21 @@ export default function LayoutWithSidebar({
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    />
+                    {sidebarOpen ? (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    ) : (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 6h16M4 12h16m-7 6h7"
+                      />
+                    )}
                   </svg>
                 </button>
                 <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">

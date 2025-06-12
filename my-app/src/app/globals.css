@@ -222,3 +222,43 @@ body {
     rgb(59, 130, 246, 0.8)
   );
 }
+
+/* Sidebar transition styles */
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay fade animation */
+.overlay-fade-in {
+  animation: overlayFadeIn 0.3s forwards;
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+/* Mobile sidebar toggle button pulse effect */
+.sidebar-toggle-button {
+  position: relative;
+}
+
+.sidebar-toggle-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-toggle-button:hover::after {
+  opacity: 0.3;
+  animation: pulse 1.5s infinite;
+}
