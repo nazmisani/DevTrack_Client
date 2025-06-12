@@ -39,7 +39,7 @@ export default function LayoutWithSidebar({
         <aside
           className={`fixed inset-y-0 left-0 w-64 bg-gray-900 bg-opacity-60 backdrop-blur-lg border-r border-gray-800 transform sidebar-transition z-50 ${
             sidebarOpen ? "translate-x-0" : "-translate-x-full"
-          } md:translate-x-0 md:block`}
+          }`}
         >
           <div className="p-6 border-b border-gray-800">
             <div className="flex items-center">
@@ -230,17 +230,18 @@ export default function LayoutWithSidebar({
           </button>
         </div>
 
-        {/* Overlay for mobile when sidebar is open */}
-        {sidebarOpen && (
+        {/* Overlay when sidebar is open - works on all screen sizes */}
+        
+{sidebarOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden overlay-fade-in"
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 overlay-fade-in"
             onClick={toggleSidebar}
             aria-hidden="true"
           ></div>
         )}
 
         {/* Main Content */}
-        <main className="flex-1 md:ml-64">
+        <main className={`flex-1 transition-all duration-300 ${sidebarOpen ? "ml-0 md:ml-64" : "ml-0"}`}>
           {/* Header / Top Bar */}
           <header className="bg-gray-900 bg-opacity-60 backdrop-blur-lg border-b border-gray-800 sticky top-0 z-40">
             <div className="flex items-center justify-between px-6 py-4">
@@ -305,6 +306,36 @@ export default function LayoutWithSidebar({
 
               {/* Right-side icons */}
               <div className="flex items-center space-x-4">
+                {/* Desktop sidebar toggle button */}
+                <button
+                  className="hidden md:flex p-2 text-gray-400 hover:text-cyan-400 transition-colors"
+                  onClick={toggleSidebar}
+                  aria-label="Toggle sidebar"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    {sidebarOpen ? (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+                      />
+                    ) : (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 6h16M4 12h16M4 18h7"
+                      />
+                    )}
+                  </svg>
+                </button>
                 <button className="relative p-1 text-gray-400 hover:text-cyan-400 transition-colors">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
